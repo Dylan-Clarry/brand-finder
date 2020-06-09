@@ -1,0 +1,19 @@
+
+How it Works
+============
+
+The purpose of this program is to scrape websites based on google search results to find potential brands through website metadata. The way that brands are distinguished is by filters given by the user defined by the queries.json, keywords.json, and excludes.json files.
+
+Queries.json is a list of queries too be performed on google search. Keywords.json are all of the keywords to be looked for on each website. Excludes.json is a list of websites to not be scraped that are already known to be unwanted (eg. amazon.com, ebay.com, etc.)
+
+The program gets the title, link, description, and social media links from each website and outputs the brands to the output.json file.
+
+
+Rationale
+=========
+
+The rationale behind this method is that the criteria for identifying brands can be given and updated by the user and to then have the program automate the process of finding these brands and their information based on that criteria. A good idea might be to use google trends to see how well certain keywords perform before adding them to keywords.json and searching.
+
+Troubleshooting
+===============
+If the program freezes while finding social media links simply entire the terminal the program is running in and press ctrl-c to skip that link.
